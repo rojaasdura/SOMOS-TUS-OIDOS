@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Psicología</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="logo">
+            <h1>SOMOS TUS OIDOS</h1>
+        </div>
+        <nav class="navbar">
+            <a href="#inicio">Inicio</a>
+            <a href="#ruleta">Ruleta Motivacional</a>
+            <a href="#testimonios">Frases Motivacionales</a>
+            <a href="./chat.html">Chat</a>
+            <a href="./inicio.html">Inicio sesión</a>
+        </nav>
+    </header>
+
+    <!-- Sección de Inicio -->
+    <section id="inicio" class="inicio-section">
+        <div class="inicio-content">
+            <div class="inicio-text">
+                <h2>Bienvenidos a Somos tus oidos</h2>
+                <p>Descubre cómo mejorar tu bienestar emocional y mental con nosotros.</p>
+                
+            </div>
+            <div class="inicio-img">
+                <img src="IMG/cabezas.jpg" alt="Imagen de Psicología">
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Ruleta Motivacional -->
+    <section id="ruleta" class="roulette-section">
+        <h2>Gira la Ruleta y Descubre un Mensaje Positivo</h2>
+        <div class="roulette-container">
+            <div id="roulette-arrow"></div>
+            <canvas id="roulette-wheel" width="500" height="500"></canvas>
+            <div class="centered-button">
+                <button id="spin-button">¡Gira la Ruleta!</button>
+            </div>
+            <div id="message-display"></div>
+        </div>
+    </section>
+
+    <!-- Sección de Testimonios -->
+    <section id="testimonios" class="testimonials-section">
+        <h2> Frases Motivacionales</h2>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <p>"El éxito es la suma de pequeños esfuerzos repetidos día tras día."</p>
+                <span>- Anónimo</span>
+            </div>
+            <div class="testimonial-card">
+                <p>"La calma en la mente trae claridad en el corazón."</p>
+                <span>- Anónimo</span>
+            </div>
+            <div class="testimonial-card">
+                <p>"No hay montaña lo suficientemente alta si tienes la voluntad de escalar."</p>
+                <span>- Anónimo</span>
+            </div>
+            <div class="testimonial-card">
+                <p>"Confía en el proceso, cada paso cuenta."</p>
+                <span>- Anónimo</span>
+            </div>
+            <div class="testimonial-card">
+                <p>"El mejor momento para plantar un árbol fue hace 20 años, el segundo mejor momento es ahora."</p>
+                <span>- Proverbio Chino</span>
+            </div>
+            <div class="testimonial-card">
+                <p>"Eres más fuerte de lo que crees, más valiente de lo que pareces y más inteligente de lo que piensas."</p>
+                <span>- Anónimo</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer>
+        <hr>
+        <p>SOMOS TUS OIDOS</p>
+        <div class="social-icons">
+            <div class="imgfooter">
+                <img src="./cefalogo1.jpg" alt="Logo Cefal">
+            </div>
+            <div class="imgfooter">
+                <img src="./IMG/pascual.png" alt="Logo Pascual">
+            </div>
+            <div class="imgfooter">
+                <a href="https://www.instagram.com/_somos_tus_oidos2713?igsh=MXJsdW9vMDhwb2Vtcw==" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" />
+                </a>
+                
+            </div>
+        </div>
+        <p>Ana Sofia Rojas M.</p>
+    </footer>
+    
+    <!-- JavaScript -->
+    <script src="ruleta.js"></script>
+</body>
+
+</html>

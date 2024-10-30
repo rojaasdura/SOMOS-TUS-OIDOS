@@ -1,0 +1,104 @@
+
+
+body {
+    font-family: 'Helvetica', Arial, sans-serif;
+    background-color:  #85afcc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.chatbox-container {
+    width: 100%;
+    max-width: 300px; /* Reducir el ancho máximo */
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.chatbox-header {
+    background-color: #cbdaf1; /* Azul intenso */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 1px solid #e6e6e6;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.chatbox-header h2 {
+    margin: 0;
+    font-size: 18px; /* Tamaño de texto más pequeño */
+}
+
+.chatbox {
+    display: flex;
+    flex-direction: column;
+    height: 350px; /* Reducir la altura */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.messages {
+    flex: 1;
+    padding: 10px; /* Reducir padding */
+    overflow-y: auto;
+    background-color: #f9f9f9;
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.messages div {
+    margin-bottom: 8px; /* Reducir margen entre mensajes */
+    padding: 8px; /* Reducir padding en los mensajes */
+    border-radius: 8px;
+    max-width: 80%;
+}
+
+.user {
+    background-color: #e6f7ff;
+    align-self: flex-end;
+}
+
+.bot {
+    background-color: #f1f1f1;
+    align-self: flex-start;
+}
+
+.input-container {
+    display: flex;
+    padding: 8px; /* Reducir padding en el input */
+    border-top: 1px solid #e6e6e6;
+}
+
+#message-input {
+    flex: 1;
+    padding: 8px; /* Reducir padding del input */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 8px; /* Ajustar el margen derecho */
+    font-size: 14px; /* Texto más pequeño */
+}
+
+#send-button {
+    background-color: #cbdaf1;
+    color: white;
+    padding: 8px 15px; /* Reducir tamaño del botón */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px; /* Texto más pequeño */
+}
+
+#send-button:hover {
+    background-color: #357ABD;
+}
+
+#send-button:active {
+    background-color: #2D6B9A;
+}
